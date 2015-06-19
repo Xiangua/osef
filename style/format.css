@@ -1,0 +1,62 @@
+body {
+	height:100%;
+	width:100%;
+	margin:0%;
+	background-color:gray;
+
+}
+
+#buttonMenuSoc {
+	float:left;
+	margin:1%;
+	width:5%;
+	height:5%;
+	background-color:black;
+	opacity:0.8;
+	z-index: 5;
+}
+
+#menuSoc {
+	float:left;
+	position: absolute;
+	display:none;
+	margin:0.5%;
+	width:20%;
+	height:97%;
+	background-color:white;
+	z-index: 6;
+}
+
+#avatar {
+	width:98%;
+	height:20%;
+	margin:1%;
+	background-image: url("../asset/avatar.jpg");
+	background-size:100% 100%;
+}
+
+#divSoc {
+	height: 79%;
+	margin:1%;
+	width:98%;
+	opacity:0.5;
+	background-color:black;
+}
+
+#contentSoc {
+	width:100%;
+	max-height:90%;
+	opacity:1;
+	overflow-y:auto;
+	background-color:blue;
+}
+
+#addSoc {
+	width:100%;
+	height: 10%;
+	opacity:1;
+	background-image: url("../asset/plus.png");
+	background-size:40%;
+	background-repeat: no-repeat;
+	background-position:center;
+}
