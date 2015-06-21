@@ -1,16 +1,33 @@
-<head>
-	<title>MyComp</title>
-	 <link href="style/format.css" rel="stylesheet" type="text/css">
-	 <script src="script/menuSoc.js"></script>
-	 <script src="script/htmlFactory.js"></script>
-</head>
-<body>
-	<div id="menuSoc">
-		<div id="avatar" onclick="backHome()"></div>
-		<div id="divSoc">
-			<div id="contentSoc"></div>
-			<div id="addSoc" onclick="newSoc()"></div>
+<!doctype html>
+<html class="fullScreen">
+	<head>
+		<title>MyComp</title>
+		<link href="style/format.css" rel="stylesheet" type="text/css">
+		<script src="script/menuSoc.js"></script>
+		<script src="script/showSoc.js"></script>
+	 	<script src="script/showProd.js"></script>
+	 	<script src="script/showHV.js"></script>
+	 	<script src="script/showRH.js"></script>
+	 	<script src="script/showCompta.js"></script>
+		<script src="script/htmlFactory.js"></script>
+	</head>
+	<body class="fullScreen">
+		<div id="listSoc">
+			<div id="avatar" onclick="backHome()"></div>
+			<div id="divSoc">
+				<div id="contentSoc"></div>
+				<div id="addSoc" onclick="newSoc()"></div>
+			</div>
 		</div>
-	</div>
-	<div id="buttonMenuSoc" onclick="menuSoc()"></div>
-</body>
+		<div id="buttonMenuSoc" onclick="menuSoc()"></div>
+		<div id="groupe" class="fullScreen" onclick="hidelistSoc()"></div>
+		<div id="menuSoc">
+			<div id="buttonProd" class="buttonSoc">PROD</div>
+			<div id="ButtonHV" class="buttonSoc">HV</div>
+			<div id="ButtonRH" class="buttonSoc">RH</div>
+			<div id="ButtonCompta" class="buttonSoc">Compta</div>
+		</div>
+		<div id="soc" class="fullScreen" onclick="hidelistSoc()"></div>
+		<div id="popPop"></div>
+	</body>
+</html>
