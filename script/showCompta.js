@@ -1,3 +1,0 @@
-function		showCompta(elem){
-	
-}

@@ -3,31 +3,37 @@
 	<head>
 		<title>MyComp</title>
 		<link href="style/format.css" rel="stylesheet" type="text/css">
-		<script src="script/menuSoc.js"></script>
-		<script src="script/showSoc.js"></script>
-	 	<script src="script/showProd.js"></script>
-	 	<script src="script/showHV.js"></script>
-	 	<script src="script/showRH.js"></script>
-	 	<script src="script/showCompta.js"></script>
+		<script src="script/classMenuGeneral.js"></script>
+		<script src="script/classLogin.js"></script>
+		<script src="script/classSoc.js"></script>
+	 	<script src="script/classProd.js"></script>
+	 	<script src="script/classGroupe.js"></script>
+	 	<script src="script/classProduit.js"></script>
+	 	<script src="script/classmenuSoc.js"></script>
+	 	<script src="script/classHV.js"></script>
+	 	<script src="script/classRH.js"></script>
+	 	<script src="script/classCompta.js"></script>
 		<script src="script/htmlFactory.js"></script>
+		<script src="script/documentReady.js"></script>
 	</head>
 	<body class="fullScreen">
-		<div id="listSoc">
-			<div id="avatar" onclick="backHome()"></div>
+		<div id="menuGeneral">
+			<div id="avatar"></div>
 			<div id="divSoc">
 				<div id="contentSoc"></div>
-				<div id="addSoc" onclick="newSoc()"></div>
+				<div id="addSoc"></div>
 			</div>
 		</div>
-		<div id="buttonMenuSoc" onclick="menuSoc()"></div>
-		<div id="groupe" class="fullScreen" onclick="hidelistSoc()"></div>
+		<div id="login" class="fullScreen"></div>
+		<div id="buttonMenuSoc"></div>
+		<div id="groupe" class="fullScreen"></div>
 		<div id="menuSoc">
 			<div id="buttonProd" class="buttonSoc">PROD</div>
 			<div id="ButtonHV" class="buttonSoc">HV</div>
 			<div id="ButtonRH" class="buttonSoc">RH</div>
 			<div id="ButtonCompta" class="buttonSoc">Compta</div>
 		</div>
-		<div id="soc" class="fullScreen" onclick="hidelistSoc()"></div>
+		<div id="soc" class="fullScreen"></div>
 		<div id="popPop"></div>
 	</body>
 </html>

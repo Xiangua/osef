@@ -1,3 +1,0 @@
-function		showHV(elem){
-
-}

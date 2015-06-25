@@ -3,6 +3,7 @@ body {
 }
 
 #buttonMenuSoc {
+	 display:none;
 	position:absolute;
 	margin:1%;
 	width:8%;
@@ -12,7 +13,12 @@ body {
 	z-index:20;
 }
 
-#listSoc {
+#login{
+	background-color:black;
+	display:none;
+}
+
+#menuGeneral {
 	float:left;
 	position: absolute;
 	display:none;
@@ -58,6 +64,7 @@ body {
 }
 
 #groupe {
+	display:none;
 	background-color:blue;
 	opacity:0.5;
 }
@@ -95,7 +102,6 @@ body {
 /************************/
 
 .fullScreen {
-	top:0px;
 	position:absolute;
 	height:100%;
 	width:100%;
