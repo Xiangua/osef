@@ -1,5 +1,4 @@
 function			MenuGeneral() {
-	this.soc = [];
 	this.countSoc = 1;
 	this.menuGeneral = document.getElementById("menuGeneral");
 	this.groupe = document.getElementById("groupe");
@@ -12,10 +11,11 @@ function			MenuGeneral() {
 
 	this.showSoc = function(soc) {
 		pageGroupe.hideGroupe();
+		menuSoc.soc = soc;
 		this.societe.style.display = "inline-block";
 		this.hideMenuGeneral();
 		this.showMenuSoc();
-		this.showProd = pageProd.showProd(soc);	
+		this.showProd = menuSoc.showProd(soc);	
 	}
 
 	this.showGroupe = function() {
@@ -30,7 +30,6 @@ function			MenuGeneral() {
 		buttonSoc.id = "soc_"+this.countSoc;
 		buttonSoc.innerHTML = "Societe "+this.countSoc;
 		buttonSoc.soc = new Soc(this.countSoc);
-		this.soc.push(buttonSoc.soc);
 		buttonSoc.addEventListener("click", function(){menuGeneral.showSoc(this.soc);});
 		this.countSoc++;
 		this.contentSoc.appendChild(elem);

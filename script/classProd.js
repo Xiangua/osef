@@ -58,7 +58,7 @@ function		MenuProd(){
 	this.newLigne = function(){
 		this.soc.newLigne();
 		var ligne = createDiv({"height":"9.2em", "width":"98%", "margin":"1%", "pos":"relative", "op":"1", "border":"1px solid black"});
-			ligne.innerHTML = "Ligne "+this.soc.ligne;
+			ligne.innerHTML = "Ligne "+this.soc.ligneCnt;
 			ligne.zIndex = "20";
 		this.contentLigne.appendChild(ligne);
 	}

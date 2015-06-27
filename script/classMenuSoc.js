@@ -3,37 +3,39 @@ function			MenuSoc(){
 	this.HV = document.getElementById("ButtonHV");
 	this.RH = document.getElementById("ButtonRH");
 	this.compta = document.getElementById("ButtonCompta");
+	this.soc = {};
 
-	this.showProd = function(soc){
+	this.showProd = function(){
 		this.resetMenu();
 		this.prod.style.backgroundColor = "red";
-		menuProd.showprod();
+		pageProd.showProd(menuSoc.soc);
 	}
 
-	this.showHV = function(soc){
+	this.showHV = function(){
 		this.resetMenu();
-		this.prod.style.backgroundColor = "red";
+		this.HV.style.backgroundColor = "red";
 	}
 
-	this.showRH = function(soc){
+	this.showRH = function(){
 		this.resetMenu();
-		this.prod.style.backgroundColor = "red";
+		this.RH.style.backgroundColor = "red";
 	}
 
-	this.showCompta = function(soc){
+	this.showCompta = function(){
 		this.resetMenu();
-		this.prod.style.backgroundColor = "red";
+		this.compta.style.backgroundColor = "red";
 	}
 
 
-	this.resetMenu = function(soc){
+	this.resetMenu = function(){
 		this.prod.style.backgroundColor = "white";
 		this.HV.style.backgroundColor = "white"; 
 		this.RH.style.backgroundColor = "white"; 
 		this.compta.style.backgroundColor = "white";
 	}
+
 	this.prod.addEventListener("click", function(){menuSoc.showProd();});
-	this.HV.addEventListener("click", function(){menuSoc.showProdHV();});
+	this.HV.addEventListener("click", function(){menuSoc.showHV();});
 	this.RH.addEventListener("click", function(){menuSoc.showRH();});
 	this.compta.addEventListener("click", function(){menuSoc.showCompta();});
 }

@@ -38,7 +38,7 @@ function		Login(){
 	this.logIn = function(){
 		if (loginInput.value == "" || passwordInput == "")
 			return ;
-		else{
+		else {
 			menuGeneral.hideMenuGeneral();
 			pageLogin.hideLogin();
 			pageGroupe.showGroupe();
